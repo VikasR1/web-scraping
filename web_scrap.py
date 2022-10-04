@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup as bs
 
 # for multiple urls
 for i in range(1, 10):
-    URL = 'https://islamqa.info/en/answers/' +str(i)
+    URL = 'https://abc.con/en/answers/' +str(i)
     page = requests.get(URL)
     if(page.status_code == 200):
         print('Data fetched successfully ', i)
