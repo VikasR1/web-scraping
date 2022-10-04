@@ -6,13 +6,12 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = "https://www.codewithharry.com/"
+url = ""
 
 # Step 1 : get the HTML
 
 r = requests.get(url)
 htmlContent = r.content
-# print(htmlContent)
 
 # Step 2 : Parse the HTML
 soup = BeautifulSoup(htmlContent, 'html.parser')
